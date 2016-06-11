@@ -2,6 +2,14 @@
 
 [A CloudFormation script](https://raw.githubusercontent.com/matthew-andrews/static-website-cloudformation/master/stack.json) that does simple static file hosting on S3.
 
+## Features
+
+- Create two buckets, a main one for the specified domain name and another for www. plus that domain
+- Sets up `index.html` and `404.html` as the main bucket's index and errors documents
+- Grants all S3 actions to an identified ‘deploy user’ to the main S3 bucket
+- Grants read access to everyone in the world to the main S3 bucket
+- Redirects all requests from `www.` to the main domain
+
 ## Usage
 
 1. Login to your **AWS console**
