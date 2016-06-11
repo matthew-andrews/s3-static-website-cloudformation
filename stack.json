@@ -16,7 +16,7 @@
         "BucketName": { "Ref": "DomainName" },
         "WebsiteConfiguration": {
           "IndexDocument": "index.html",
-          "ErrorDocument": "404/index.html"
+          "ErrorDocument": "404.html"
         }
       }
     },
